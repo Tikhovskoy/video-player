@@ -31,7 +31,7 @@ video-player/
 ├── index.html                 # Главная HTML-страница плеера
 ├── style.css                  # Стилизация плеера (размеры, кнопки, прогрессбар и т.п.)
 ├── player.js                  # Скрипт для инициализации видеоплеера через Playable.js
-├── screenshots/
+└── screenshots/
     └── screenshots.png        # Скриншот плеера (для демонстрации в README или на GitHub Pages)
 
 ```
