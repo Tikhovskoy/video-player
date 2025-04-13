@@ -26,14 +26,14 @@
 ## Структура проекта
 
 ```
-video-player
-├── README.md
-├── index.html
-├── player.js
-├── screenshots
-│   ├── max.gif
-│   └── min.gif
-└── style.css
+video-player/
+├── README.md                  # Описание проекта
+├── index.html                 # Главная HTML-страница плеера
+├── style.css                  # Стилизация плеера (размеры, кнопки, прогрессбар и т.п.)
+├── player.js                  # Скрипт для инициализации видеоплеера через Playable.js
+├── screenshots/
+    └── screenshots.png        # Скриншот плеера (для демонстрации в README или на GitHub Pages)
+
 ```
 
 ---
