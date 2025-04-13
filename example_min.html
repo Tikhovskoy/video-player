@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ГОСТФильм Плеер</title>
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="player" class="vp-content__block">
+    <div class="js-video-container video-container"></div>
+    <div class="vp-buttons__block">
+      <div class="left_buttons">
+        <button class="js-play-button vp-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button class="js-pause-button vp-button">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <button class="js-mute-button vp-button">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+        <button class="js-volume-button vp-button">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="vp-timer_block">
+        <span class="vp-button js-current-time"></span>
+        <div class="progress_bar-block">
+          <div class="js-progress progress_bar" style="background-color: grey;">
+            <div class="js-progress-slider progress_bar-content" style="background-color: red;"></div>
+            <div class="progress_bar-slider"></div>
+          </div>
+        </div>
+        <span class="vp-button js-duration"></span>
+      </div>
+      <div class="right_buttons">
+        <button class="js-fullscreen-button vp-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+  <script src="player.js"></script>
+
+  <script type="text/javascript">
+    createPlayer({elementId: 'player'});
+  </script>
+
+</body>
+</html>
