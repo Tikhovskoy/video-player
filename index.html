@@ -14,49 +14,51 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div id="player" class="vp-content__block">
     <div class="js-video-container video-container"></div>
     <div class="vp-buttons__block">
-      <div class="left_buttons">
-        <button class="js-play-button vp-button">
+
+      <div class="left-buttons">
+        <button class="js-play-button vp-button" aria-label="Воспроизвести">
           <i class="fa fa-play" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button vp-button">
+        <button class="js-pause-button vp-button" hidden aria-label="Пауза">
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
-        <button class="js-mute-button vp-button">
+        <button class="js-mute-button vp-button" aria-label="Выключить звук">
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button class="js-volume-button vp-button">
+        <button class="js-volume-button vp-button" hidden aria-label="Включить звук">
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
       </div>
-      <div class="vp-timer_block">
-        <span class="vp-button js-current-time"></span>
-        <div class="progress_bar-block">
-          <div class="js-progress progress_bar" style="background-color: grey;">
-            <div class="js-progress-slider progress_bar-content" style="background-color: red;"></div>
-            <div class="progress_bar-slider"></div>
+
+      <div class="vp-timer-block">
+        <span class="vp-time js-current-time">0:00</span>
+        <div class="progress-bar-block">
+          <div class="js-progress progress-bar">
+            <div class="js-progress-slider progress-bar-content"></div>
+            <div class="progress-bar-slider"></div>
           </div>
         </div>
-        <span class="vp-button js-duration"></span>
+        <span class="vp-time js-duration">0:00</span>
       </div>
-      <div class="right_buttons">
-        <button class="js-fullscreen-button vp-button">
+
+      <div class="right-buttons">
+        <button class="js-fullscreen-button vp-button" aria-label="Полный экран">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
+
     </div>
   </div>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="player.js"></script>
-
   <script>
     createPlayer({ elementId: 'player' });
   </script>
-
 </body>
 </html>
